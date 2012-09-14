@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 85
+*.css
+*.dot
+*.gif
+*.png
+*.ttf
+[a-z]*.html
+[a-z]*.map
+[a-z]*.md5
+doxygen.css
+ssx
+tags
+
+END

@@ -1,0 +1,17 @@
+<root>
+    <strage>
+        <id>"12"</id>
+        <name>"jack"</name>
+        <accout>"0001"</accout>
+    </strage>
+    <strage>
+        <id>"13"</id>
+        <name>"toni"</name>
+        <accout>"0002"</accout>
+    </strage>
+    <strage>
+        <id>"14"</id>
+        <name>"hate"</name>
+        <accout>"0003"</accout>
+    </strage>
+</root>

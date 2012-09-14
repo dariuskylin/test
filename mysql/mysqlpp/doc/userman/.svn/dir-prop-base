@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 45
+*.fo
+*.o
+*.pdf
+*.txt
+
+hello
+tags
+userman.dbx
+
+END

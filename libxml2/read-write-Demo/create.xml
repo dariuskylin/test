@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+    <IP>192.168.1.116</IP>
+    <Port>65535</Port>
+    <num>1000</num>
+    <node2 attribute="yes">NODE CONTENT</node2>
+    <son>
+        <grandson>This is a grandson node</grandson>
+    </son>
+</root>

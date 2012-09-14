@@ -1,0 +1,25 @@
+Linux 下C使用XML传递消息（字符串） 
+
+ 在linux下经常要进行socket通信，而数据流多采用目前流行的xml格式，这就会有两个用的比较多的功能：
+1、接收端将收到的字符串转换成xml格式的数据；
+2、发送端将xml格式的数据转换成字符串发送。
+
+运用libxml2组件进行上述操作实际上是xmlDocPtr和xmlChar两种类型之间的转换。
+
+1. xmlDocPtr -> xmlChar
+xmlDocPtr doc;
+xmlChar *xmlbuff;
+int buffersize;
+xmlDocDumpFormatMemory(doc, &xmlbuff, &buffersize, 1);
+2. xmlChar -> xmlDocPtr
+xmlDocPtr doc;
+char * cData;
+doc = xmlParseMemory(docname, strlen(cData)+1);
+怎样把xmlChar转换成char就无须多讲了，直接用（char*）强行转换也行。
+
+(以上，转自http://hi.baidu.com/dante300/blog/item/b0962f51e472261d0cf3e3ad.html)
+
+
+下面的例子，srv端等待6601端口的数据，并使用XML解析，取得其中的name和age项，并打印到终端
+
+    client端读取一个XML文件，并把读取的数据转换为字符串，向服务端的端口发送
