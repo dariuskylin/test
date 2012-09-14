@@ -25,7 +25,7 @@ int main(){
     int t,r;
     mysql_init(&mysql);
     int m=0;
-    if(!mysql_real_connect(&mysql,"localhost","root","ndsl435","company",0,NULL,0)){
+    if(!mysql_real_connect(&mysql,"localhost","root","passwd","company",0,NULL,0)){
         printf("Error connecting to database:%s\n",mysql_error(&mysql));
     }
     else{
